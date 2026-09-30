@@ -1,0 +1,7 @@
+.git
+.codex
+.agents
+bin
+data
+.env
+*.png

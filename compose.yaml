@@ -1,0 +1,21 @@
+services:
+  asteria:
+    build: .
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      ASTERIA_API_TOKEN: ${ASTERIA_API_TOKEN:?Set ASTERIA_API_TOKEN}
+      ASTERIA_REVIEW_TOKEN: ${ASTERIA_REVIEW_TOKEN:-}
+      ASTERIA_MODEL_PROVIDER: ${ASTERIA_MODEL_PROVIDER:-}
+      ASTERIA_MODEL_URL: ${ASTERIA_MODEL_URL:-}
+      ASTERIA_MODEL_NAME: ${ASTERIA_MODEL_NAME:-}
+      ASTERIA_MODEL_KEY: ${ASTERIA_MODEL_KEY:-}
+      ASTERIA_MODEL_MAX_TOKENS: ${ASTERIA_MODEL_MAX_TOKENS:-}
+      ASTERIA_MODEL_TIMEOUT: ${ASTERIA_MODEL_TIMEOUT:-}
+    volumes:
+      - knowledge:/data
+    restart: unless-stopped
+    stop_grace_period: 15s
+
+volumes:
+  knowledge:

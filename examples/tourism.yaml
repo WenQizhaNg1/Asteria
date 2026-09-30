@@ -1,0 +1,10 @@
+library_id: tourism
+name: 景区运营
+domains:
+  - id: operations
+    name: 景区运营
+    scope: 游客组织、活动安排与接驳服务
+  - id: shuttle
+    parent: operations
+    name: 接驳组织
+    scope: 接驳运力、候车队列与接驳停车场

@@ -1,0 +1,13 @@
+/bin/
+/data/
+/.cache/
+.env
+.env.*
+!.env.example
+!.env.sample
+/.aws/
+/.agents/
+/.codex/
+coverage.out
+/docs/*patent*
+/docs/*专利*

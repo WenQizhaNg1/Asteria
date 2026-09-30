@@ -1,0 +1,21 @@
+{
+  "local_only": false,
+  "credentials": [
+    {
+      "token": "replace-with-your-agent-token",
+      "actor": {
+        "id": "traffic-agent",
+        "human": false,
+        "admin": false,
+        "grants": [
+          {"library_id": "traffic"},
+          {"library_id": "tourism"}
+        ]
+      }
+    },
+    {
+      "token": "replace-with-your-reviewer-token",
+      "actor": {"id": "reviewer", "human": true, "admin": true}
+    }
+  ]
+}

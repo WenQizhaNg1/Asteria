@@ -1,0 +1,15 @@
+library_id: traffic
+name: 交通运行
+domains:
+  - id: transport
+    name: 交通运行
+    scope: 道路交通状态、协同处置和复盘
+    overview: 从停车、信号控制和信息发布等领域寻找适用经验。
+  - id: parking
+    parent: transport
+    name: 停车管理
+    scope: 停车场容量、入口排队与分流
+  - id: signals
+    parent: transport
+    name: 信号控制
+    scope: 路口放行、上游排队与交通组织
